@@ -25,7 +25,7 @@
   display: flex;
   background-color: #ffffff;
   border: none;
-  width: 560px;
+  width: 530px;
   border-radius: 3px;
 }
 
@@ -41,7 +41,7 @@
 
 .search-box {
   display: none;
-  width: 76%;
+  width: 70%;
   height: 100%;
   position: relative;
   -webkit-box-shadow: none;
@@ -60,7 +60,7 @@
 
 .search-box:focus {
   outline: none;
-  width: 76%;
+  width: 70%;
 }
 
 .search-box::-webkit-input-placeholder {
@@ -166,10 +166,7 @@
 }
 
 .select {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: none;
+  margin-right: 42px;
   position: relative;
   font-size: 1.5rem;
   -webkit-box-align: center;
@@ -180,6 +177,9 @@
 }
 
 .open .select {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,8 +187,8 @@
 
 .select span {
   position: relative;
-  padding: 6px 0 6px 12px;
-  border-left: 1px solid #2A2E37;
+  padding: 2px 12px;
+  border-left: 1px solid #888888;
 }
 
 .select span:before {
@@ -196,8 +196,8 @@
   width: 1px;
   height: 8px;
   position: absolute;
-  right: -7px;
-  top: 11px;
+  right: 0px;
+  top: 13px;
   display: block;
   background-color: var(--hove);
   -webkit-transform: rotate(-40deg);
@@ -212,8 +212,8 @@
   width: 1px;
   height: 12px;
   position: absolute;
-  right: -13px;
-  top: 7px;
+  right: -6px;
+  top: 9px;
   display: block;
   background-color: var(--hove);
   -webkit-transform: rotate(39deg);
@@ -226,16 +226,16 @@
 .bum .select span:before {
   height: 8px;
   background-color: #2A2E37;
-  right: -7px;
-  top: 11px;
+  right: 0px;
+  top: 13px;
   -webkit-transform: rotate(320deg);
           transform: rotate(320deg);
 }
 
 .bum .select span:after {
   height: 8px;
-  right: -12px;
-  top: 11px;
+  right: -5px;
+  top: 13px;
   -webkit-transform: rotate(399deg);
           transform: rotate(399deg);
   background-color: #2A2E37;
@@ -290,7 +290,7 @@
 
 .selectList ul li:hover {
   border-color: var(--hove);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   background: #fff;
 }
 
@@ -343,6 +343,7 @@
 }
 
 .filterBar .btnFilter:hover {
+  color: #56cb7f;
   background: #b7fccfb2;
 }
 
@@ -375,6 +376,7 @@
 }
 
 .filterBar .filterBtnActive:hover {
+  color: #fff;
   background: var(--hove);
 }
 

@@ -83,7 +83,7 @@ $('.container').mouseenter(function () {
 
 
 
-$('.select').mouseenter(function () {
+$('.select').click(function () {
     $('.select ~ span').parent().toggleClass('bum');
     $('.selectList').parent().toggleClass('bum');
     

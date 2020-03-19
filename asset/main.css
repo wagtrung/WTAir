@@ -5,6 +5,8 @@
     width:100%;
     top:0;
     z-index: 900;
+    display: flex;
+    align-items: center;
 }
 
 #logo{
@@ -17,7 +19,6 @@
 .navbar{
     display:flex;
     justify-content:space-between;
-    margin-top: 20px;
 }
 .header_navbar-ul{
     margin: 0;
@@ -145,7 +146,7 @@ background:rgba(150, 150, 150, 0.281);
 
 display:none;
 position : absolute;
-top:220%;
+top:150%;
 left:-100%;
 color:#333;
 width:410px;
@@ -201,10 +202,10 @@ border-radius: 3px;
     
    cursor: pointer;
     background: #bdbdbd2a;
+    color:#333;
   
 }
 .nSeen:hover{
-    
     border-left: 4px solid #04ffab;
     background: #04d8913a;
     
@@ -684,8 +685,7 @@ margin-bottom:10px;
 } */
 
 /* container */
-.container{
-    margin-top: 86px;
+.container1{
     padding:30px 0px;
     width:100%;
     background:rgb(245, 245, 245);
@@ -1169,3 +1169,118 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
 .fend span{
     color:rgb(236, 236, 236);
 }
+
+/*************************
+ * Banner section
+ */
+ .banner {
+    background-color: #f7f7f7;
+  }
+  
+  .banner .content-box .tagline, .banner .content-box-fluid .tagline {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .banner .content-box h2, .banner .content-box-fluid h2 {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .banner .content-box h2, .banner .content-box-fluid h2 {
+      font-size: 38px;
+      line-height: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .banner .content-box h2, .banner .content-box-fluid h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  
+  .banner .content-box p, .banner .content-box-fluid p {
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .banner .ban-img {
+      margin-bottom: 40px;
+    }
+  }
+  
+  .onclip{
+    position: relative;
+    width:600px;
+    height:600px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("gt.png");
+    clip-path: url(#clipping);
+  }
+  .onclip span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(-30deg,#03e59ab0 30%, transparent 50%);
+  }
+
+  /*************************
+ * Banner section
+ */
+ .banner {
+    background-color: #f7f7f7;
+   
+  }
+  
+  .banner .content-box .tagline, .banner .content-box-fluid .tagline {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+  
+  .banner .content-box h2, .banner .content-box-fluid h2 {
+    color: var(--dblue);
+    font-family: Poppins, sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .banner .content-box h2, .banner .content-box-fluid h2 {
+      font-size: 38px;
+      line-height: 50px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .banner .content-box h2, .banner .content-box-fluid h2 {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  
+  .banner .content-box p, .banner .content-box-fluid p {
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .banner .ban-img {
+      margin-bottom: 40px;
+    }
+  }
+  
+  #Layer_1 {
+    position: absolute;
+    width: 200px;
+    top: 150px;
+    left: -7%;
+  }
