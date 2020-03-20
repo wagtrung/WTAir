@@ -89,8 +89,9 @@ section {
 }
 /* ========================= */
 .grid{
-    margin : 0 auto;
-  width: 1280px;
+    margin: auto;
+    max-width: 1280px;
+    flex: 1;
 }
 
 .row{
@@ -278,17 +279,19 @@ section {
     transition:.3s;
 
   }
+  .btn:hover{
+    color:#fff;
+  }
 
   .btnbig{
     width:100%;
-    padding: 15px;
+    padding: 10px;
   }
   
 .btnGrey{
   color: #9b9b9b;
   background:#f0f0f0;
 }
-
 .btnlightHove{
   color: #1cb150a9;
   background:#bfffd554;
@@ -299,7 +302,6 @@ section {
   }
 
   .btnOutline{
-    box-sizing: border-box;
     color: #dddddd;
     border:2px solid #dddddd;
     background:transparent;
@@ -314,6 +316,7 @@ section {
     color: #2f2f2f;
   }
   .btnFocus:hover{
+    color: #fff;
     background:rgb(19, 247, 190);
   }
 
@@ -352,7 +355,12 @@ section {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  
+.marL{
+  margin-left :5px;
+}
+.marR{
+  margin-right :5px;
+}
   .btn.icon-left i {
     line-height: .8;
     margin-right: 20px;
