@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WagTrung</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-5.12.1-web\css\all.min.css">
     <link rel="stylesheet" href="themify-icons/themify-icons.css">
@@ -14,9 +14,13 @@
     <link rel="stylesheet" href="asset/base.css">
     <link rel="stylesheet" href="asset/main.css">
     <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="asset/mediaStyle.css">
     <link rel="shortcut icon" type="image/png" href="img/fav.ico" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/response.js/0.10.1/response.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -257,523 +261,524 @@
                 </div>
             </div>
         </section>
-<section id="secB">
-        <div  class="container1">
+        <section id="secB">
+            <div class="container1">
 
-            <!-- <img style="width:100%; background-position:bottom; margin-top:-290px;" src="img/on.jpg" alt=""> -->
-            <div class="grid">
-                <div class="row">
-                    <div class="col-3">
-                        <!-- category -->
-                        <nav class="category">
+                <!-- <img style="width:100%; background-position:bottom; margin-top:-290px;" src="img/on.jpg" alt=""> -->
+                <div class="grid">
+                    <div class="row">
+                        <div class="col-3">
+                            <!-- category -->
+                            <nav class="category">
 
-                            <div class="ctghead">
+                                <div class="ctghead">
 
-                                <h3><i class="ti-list"></i>Category</h3>
+                                    <h3><i class="ti-list"></i>Category</h3>
+                                </div>
+
+                                <ul class="ctgul">
+                                    <li class="ctgli showed">
+                                        <a href="#" class="ctga">
+                                            <i class="ti-user"></i>
+                                            Me item</a>
+                                    </li>
+
+                                    <li class="ctgli">
+                                        <a href="#" class="ctga">
+                                            <div class="ok"></div>
+                                            <i class="ti-layout"></i>
+                                            Second item
+                                            <i class="ti-angle-down down "></i>
+                                        </a>
+
+
+                                        <ul class="ctgulChild">
+                                            <li class="ctgliChild">
+                                                <a href="" class="ctgaChild">Second item</a>
+                                            </li>
+                                            <li class="ctgliChild">
+                                                <a href="" class="ctgaChild"> Second item</a>
+                                            </li>
+                                            <li class="ctgliChild">
+                                                <a href="" class="ctgaChild"> Child item</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="ctgli">
+                                        <a href="#" class="ctga">
+                                            <i class="ti-comment"></i>
+                                            Third item</a>
+                                    </li>
+
+                                    <li class="ctgli">
+                                        <a href="#" class="ctga ">
+                                            <i class="ti-write"></i>
+                                            show 2 times
+                                            <i class="ti-angle-down down "></i>
+                                        </a>
+                                        <ul class="ctgulChild">
+                                            <li class="ctgliChild">
+                                                <a href="" class="ctgaChild">Second item</a>
+                                            </li>
+                                            <li class="ctgliChild">
+                                                <a href="" class="ctgaChild"> Second item</a>
+                                            </li>
+                                            <li class="ctgliChild">
+                                                <a href="" class="ctgaChild"> Child item</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="ctgli">
+                                        <a href="#" class="ctga">
+                                            <i class="ti-comment"></i>
+                                            Third item</a>
+                                    </li>
+
+                                    <li class="ctgli">
+                                        <a href="#" class="ctga">
+                                            <i class="ti-comment"></i>
+                                            Third item</a>
+                                    </li>
+
+                                </ul>
+
+
+
+                            </nav>
+
+
+                        </div>
+                        <div class="col-9">
+
+                            <div class="filterBar">
+                                <span class="sortBy">Filter box</span>
+                                <a href="#" class="btn btnlightHove btnFilter filterBtnActive">
+                                    <span class="deco">
+                                        <i class="fas fa-burn"></i>
+                                    </span>
+                                    &nbsp;Popular
+                                </a>
+                                <a href="#" class="btn btnlightHove btnFilter">
+                                    <span class="deco">
+                                        <i class="fas fa-tags"></i>
+                                    </span>
+                                    &nbsp;New Item</a>
+                                <a href="#" class="btn btnlightHove btnFilter">
+                                    <span class="deco">
+                                        <i class="fas fa-paper-plane"></i>
+                                    </span>
+                                    &nbsp;Hot Deal</a>
+
+                                <div class="select2">
+                                    <span><i class="fas fa-sort-amount-up"></i>
+                                        Sort By Price</span>
+                                    <i class="ti-angle-down"></i>
+                                    <div class="selectList2">
+                                        <ul>
+                                            <li>over $1000</li>
+                                            <li>$500 to 900</li>
+                                            <li>below $500 </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="filterPageContent">
+                                    <div class="filterPageNum">
+                                        <span>1</span>/14
+                                    </div>
+                                    <div class="filterPageControl">
+                                        <a class="PageLeft PageDis">
+                                            <i class="ti-angle-left"></i>
+                                        </a>
+                                        <a class="PageLeft">
+                                            <i class="ti-angle-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <ul class="ctgul">
-                                <li class="ctgli showed">
-                                    <a href="#" class="ctga">
-                                        <i class="ti-user"></i>
-                                        Me item</a>
-                                </li>
+                            <div class="productContainer">
+                                <div class="row">
 
-                                <li class="ctgli">
-                                    <a href="#" class="ctga">
-                                        <div class="ok"></div>
-                                        <i class="ti-layout"></i>
-                                        Second item
-                                        <i class="ti-angle-down down "></i>
-                                    </a>
+                                    <div class="col-9-3">
+                                        <div class="productBox">
+                                            <div class="productImg" style="background-image: url('img/noti (4).jpg');">
+                                                <span class="flashHov"></span>
+                                            </div>
+                                            <div class="pdDetail">
+                                                <h4 class="pdName">
+                                                    Vivamus at nunc iaculis, consequat nisl sit amet, vulputate enim.
+                                                </h4>
+                                                <div class="pdSubDetail">
+                                                    <div class="pdPrice">
+                                                        <span class="pdPriceNew">$1799</span>
+                                                        <span class="pdPriceOld">$1800</span>
+                                                    </div>
+                                                    <div class="pdRating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="pdOrigin">
+                                                    <!-- <div class="pdAction">
+                                                <span class="pdLike">
+                                                    <i class="ti-heart"></i>
+                                                </span>
+                                            </div> -->
+                                                    <span class="pdFrom">Japan</span>
+                                                    <span class="pdBrand">Banner, Poster</span>
+                                                </div>
 
+                                                <div class="pdFeature">
 
-                                    <ul class="ctgulChild">
-                                        <li class="ctgliChild">
-                                            <a href="" class="ctgaChild">Second item</a>
-                                        </li>
-                                        <li class="ctgliChild">
-                                            <a href="" class="ctgaChild"> Second item</a>
-                                        </li>
-                                        <li class="ctgliChild">
-                                            <a href="" class="ctgaChild"> Child item</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                                    <span class="deco3 poppu ">
+                                                        <i class="fas fa-tags"></i>
+                                                    </span>
 
-                                <li class="ctgli">
-                                    <a href="#" class="ctga">
-                                        <i class="ti-comment"></i>
-                                        Third item</a>
-                                </li>
+                                                    <span class="deco3 newly">
+                                                        <i class="fas fa-paper-plane"></i>
+                                                    </span>
 
-                                <li class="ctgli">
-                                    <a href="#" class="ctga ">
-                                        <i class="ti-write"></i>
-                                        show 2 times
-                                        <i class="ti-angle-down down "></i>
-                                    </a>
-                                    <ul class="ctgulChild">
-                                        <li class="ctgliChild">
-                                            <a href="" class="ctgaChild">Second item</a>
-                                        </li>
-                                        <li class="ctgliChild">
-                                            <a href="" class="ctgaChild"> Second item</a>
-                                        </li>
-                                        <li class="ctgliChild">
-                                            <a href="" class="ctgaChild"> Child item</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                                                </div>
+                                            </div>
 
-                                <li class="ctgli">
-                                    <a href="#" class="ctga">
-                                        <i class="ti-comment"></i>
-                                        Third item</a>
-                                </li>
-
-                                <li class="ctgli">
-                                    <a href="#" class="ctga">
-                                        <i class="ti-comment"></i>
-                                        Third item</a>
-                                </li>
-
-                            </ul>
+                                            <!-- PD label -->
+                                            <div class="pdLabelLove">
 
 
+                                                <span class="deco2">
+                                                    <i class="fas fa-award"></i>
+                                                </span>
+                                                Premium Package
 
-                        </nav>
+                                            </div>
+                                            <div class="pdLabelSale">
+                                                <span class="numSale">69<span>%</span>
+                                                </span>
+                                                <span class="textSale">Sale off</span>
+                                            </div>
 
+                                        </div>
+                                    </div>
 
-                    </div>
-                    <div class="col-9">
+                                    <div class="col-9-3">
+                                        <div class="productBox">
+                                            <div class="productImg" style="background-image: url('img/noti(7).jpg');">
+                                                <span class="flashHov"></span>
+                                            </div>
+                                            <div class="pdDetail">
+                                                <h4 class="pdName">
+                                                    Pellentesque rhoncus nisi in pretium tincidunt.
+                                                </h4>
+                                                <div class="pdSubDetail">
+                                                    <div class="pdPrice">
+                                                        <span class="pdPriceNew">$490</span>
+                                                        <span class="pdPriceOld">$690</span>
+                                                    </div>
+                                                    <div class="pdRating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="pdOrigin">
+                                                    <!-- <div class="pdAction">
+                                                <span class="pdLike">
+                                                    <i class="ti-heart"></i>
+                                                </span>
+                                            </div> -->
+                                                    <span class="pdFrom">Poland</span>
+                                                    <span class="pdBrand">Branding</span>
+                                                </div>
+                                                <div class="pdFeature">
 
-                        <div class="filterBar">
-                            <span class="sortBy">Filter box</span>
-                            <a href="#" class="btn btnlightHove btnFilter filterBtnActive">
-                                <span class="deco">
-                                    <i class="fas fa-burn"></i>
-                                </span>
-                                &nbsp;Popular
-                            </a>
-                            <a href="#" class="btn btnlightHove btnFilter">
-                                <span class="deco">
-                                    <i class="fas fa-tags"></i>
-                                </span>
-                                &nbsp;New Item</a>
-                            <a href="#" class="btn btnlightHove btnFilter">
-                                <span class="deco">
-                                    <i class="fas fa-paper-plane"></i>
-                                </span>
-                                &nbsp;Hot Deal</a>
+                                                    <span class="deco3 hot">
+                                                        <i class="fas fa-burn"></i>
+                                                    </span>
+                                                    <span class="deco3 poppu ">
+                                                        <i class="fas fa-tags"></i>
+                                                    </span>
 
-                            <div class="select2">
-                                <span><i class="fas fa-sort-amount-up"></i>
-                                    Sort By Price</span>
-                                <i class="ti-angle-down"></i>
-                                <div class="selectList2">
-                                    <ul>
-                                        <li>over $1000</li>
-                                        <li>$500 to 900</li>
-                                        <li>below $500 </li>
-                                    </ul>
+                                                    <span class="deco3 newly">
+                                                        <i class="fas fa-paper-plane"></i>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- PD label -->
+                                            <div class="pdLabelLove">
+                                                <span class="deco2">
+                                                    <i class="fas fa-crown"></i>
+                                                </span>
+                                                Gold Package
+                                            </div>
+                                            <div class="pdLabelSale">
+                                                <span class="numSale">50<span>%</span>
+                                                </span>
+                                                <span class="textSale">Sale off</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-9-3">
+                                        <div class="productBox">
+                                            <div class="productImg" style="background-image: url('img/noti (2).jpg');">
+                                                <span class="flashHov"></span>
+                                            </div>
+                                            <div class="pdDetail">
+                                                <h4 class="pdName">
+                                                    Sed eu sapien ac tortor maximus dignissim. </h4>
+                                                <div class="pdSubDetail">
+                                                    <div class="pdPrice">
+                                                        <span class="pdPriceNew">$609</span>
+                                                        <span class="pdPriceOld">$1290</span>
+                                                    </div>
+                                                    <div class="pdRating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pdOrigin">
+                                                    <!-- <div class="pdAction">
+                                                <span class="pdLike">
+                                                    <i class="ti-heart"></i>
+                                                </span>
+                                            </div> -->
+                                                    <span class="pdFrom">America</span>
+                                                    <span class="pdBrand">UI/UX Packages</span>
+                                                </div>
+
+                                                <div class="pdFeature">
+                                                    <span class="deco3 newly">
+                                                        <i class="fas fa-paper-plane"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+
+                                            <!-- PD label -->
+                                            <!-- <div class="pdLabelLove">
+                                            <span class="deco2">
+                                                <i class="fas fa-burn"></i>
+                                            </span>
+                                            Popular
+                                        </div> -->
+                                            <div class="pdLabelSale">
+                                                <span class="numSale">10<span>%</span>
+                                                </span>
+                                                <span class="textSale">Sale off</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-9-3">
+                                        <div class="productBox">
+                                            <div class="productImg" style="background-image: url('img/noti (5).jpg');">
+                                                <span class="flashHov"></span>
+                                            </div>
+                                            <div class="pdDetail">
+                                                <h4 class="pdName">
+                                                    Maecenas euismod tortor quis purus ornare, sit amet feugiat enim
+                                                    faucibus.
+                                                </h4>
+                                                <div class="pdSubDetail">
+                                                    <div class="pdPrice">
+                                                        <span class="pdPriceNew">$229</span>
+                                                    </div>
+                                                    <div class="pdRating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pdOrigin">
+                                                    <span class="pdFrom">American</span>
+                                                    <span class="pdBrand">Brand, Facebook cover</span>
+                                                </div>
+                                                <div class="pdFeature">
+
+                                                    <span class="deco3 hot">
+                                                        <i class="fas fa-burn"></i>
+                                                    </span>
+                                                    <span class="deco3 poppu ">
+                                                        <i class="fas fa-tags"></i>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+
+                                            <!-- PD label -->
+                                            <div class="pdLabelLove">
+                                                <span class="deco2">
+                                                    <i class="fas fa-shield-alt"></i>
+                                                </span>
+                                                Slivir Package
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-9-3">
+                                        <div class="productBox">
+                                            <div class="productImg" style="background-image: url('img/noti (1).jpg');">
+                                                <span class="flashHov"></span>
+                                            </div>
+                                            <div class="pdDetail">
+                                                <h4 class="pdName">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                </h4>
+                                                <div class="pdSubDetail">
+                                                    <div class="pdPrice">
+                                                        <span class="pdPriceNew">$399</span>
+                                                        <!-- <span class="pdPriceOld">$290</span> -->
+                                                    </div>
+                                                    <div class="pdRating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pdOrigin">
+                                                    <!-- <div class="pdAction">
+                                                <span class="pdLike">
+                                                    <i class="ti-heart"></i>
+                                                </span>
+                                            </div> -->
+                                                    <span class="pdFrom">WuLan</span>
+                                                    <span class="pdBrand">Poster, Icon</span>
+                                                </div>
+                                                <!-- <div class="pdFeature">
+                                                <span class="deco3 newly">
+                                                    <i class="fas fa-paper-plane"></i>
+                                                </span>
+                                            </div> -->
+                                            </div>
+
+                                            <!-- PD label -->
+                                            <!-- <div class="pdLabelLove">
+                                            <span class="deco2">
+                                                <i class="fas fa-burn"></i>
+                                            </span>
+                                            Popular
+                                        </div> -->
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-9-3">
+                                        <div class="productBox">
+                                            <div class="productImg" style="background-image: url('img/noti (3).jpg');">
+                                                <span class="flashHov"></span>
+                                            </div>
+                                            <div class="pdDetail">
+                                                <h4 class="pdName">
+                                                    Curabitur id justo quis dolor condimentum porttitor id eu purus.
+                                                </h4>
+                                                <div class="pdSubDetail">
+                                                    <div class="pdPrice">
+                                                        <span class="pdPriceNew">$90</span>
+                                                        <!-- <span class="pdPriceOld">$290</span> -->
+                                                    </div>
+                                                    <div class="pdRating">
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="far fa-star"></i>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pdOrigin">
+                                                    <span class="pdFrom">Thailand</span>
+                                                    <span class="pdBrand">Logo Identity</span>
+                                                </div>
+                                                <div class="pdFeature">
+
+                                                    <span class="deco3 hot">
+                                                        <i class="fas fa-burn"></i>
+                                                    </span>
+                                                    <span class="deco3 poppu ">
+                                                        <i class="fas fa-tags"></i>
+                                                    </span>
+
+                                                    <span class="deco3 newly">
+                                                        <i class="fas fa-paper-plane"></i>
+                                                    </span>
+
+                                                </div>
+                                            </div>
+                                            <!-- PD label -->
+                                            <!-- <div class="pdLabelLove">
+                                            <span class="deco2">
+                                                <i class="fas fa-burn"></i>
+                                            </span>
+                                            Popular
+                                        </div> -->
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
 
-                            <div class="filterPageContent">
-                                <div class="filterPageNum">
-                                    <span>1</span>/14
-                                </div>
-                                <div class="filterPageControl">
-                                    <a class="PageLeft PageDis">
+                            <ul class="pagin topSpace">
+                                <li class="paginli">
+                                    <a href="#" class="pagina ">
                                         <i class="ti-angle-left"></i>
                                     </a>
-                                    <a class="PageLeft">
+                                </li>
+
+                                <li class="paginli ">
+                                    <a href="#" class="pagina pagina-active">1</a>
+                                </li>
+
+                                <li class="paginli">
+                                    <a href="#" class="pagina">2</a>
+                                </li>
+
+                                <li class="paginli">
+                                    <a href="#" class="pagina">3</a>
+                                </li>
+
+                                <li class="paginli">
+                                    <a href="#" class="pagina">...</a>
+                                </li>
+
+                                <li class="paginli">
+                                    <a href="#" class="pagina">14</a>
+                                </li>
+
+                                <li class="paginli">
+                                    <a href="#" class="pagina">
                                         <i class="ti-angle-right"></i>
                                     </a>
-                                </div>
-                            </div>
-
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="productContainer">
-                            <div class="row">
-
-                                <div class="col-9-3">
-                                    <div class="productBox">
-                                        <div class="productImg" style="background-image: url('img/noti (4).jpg');">
-                                            <span class="flashHov"></span>
-                                        </div>
-                                        <div class="pdDetail">
-                                            <h4 class="pdName">
-                                                Vivamus at nunc iaculis, consequat nisl sit amet, vulputate enim. </h4>
-                                            <div class="pdSubDetail">
-                                                <div class="pdPrice">
-                                                    <span class="pdPriceNew">$1799</span>
-                                                    <span class="pdPriceOld">$1800</span>
-                                                </div>
-                                                <div class="pdRating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="pdOrigin">
-                                                <!-- <div class="pdAction">
-                                                <span class="pdLike">
-                                                    <i class="ti-heart"></i>
-                                                </span>
-                                            </div> -->
-                                                <span class="pdFrom">Japan</span>
-                                                <span class="pdBrand">Banner, Poster</span>
-                                            </div>
-
-                                            <div class="pdFeature">
-
-                                                <span class="deco3 poppu ">
-                                                    <i class="fas fa-tags"></i>
-                                                </span>
-
-                                                <span class="deco3 newly">
-                                                    <i class="fas fa-paper-plane"></i>
-                                                </span>
-
-                                            </div>
-                                        </div>
-
-                                        <!-- PD label -->
-                                        <div class="pdLabelLove">
-
-
-                                            <span class="deco2">
-                                                <i class="fas fa-award"></i>
-                                            </span>
-                                            Premium Package
-
-                                        </div>
-                                        <div class="pdLabelSale">
-                                            <span class="numSale">69<span>%</span>
-                                            </span>
-                                            <span class="textSale">Sale off</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-9-3">
-                                    <div class="productBox">
-                                        <div class="productImg" style="background-image: url('img/noti(7).jpg');">
-                                            <span class="flashHov"></span>
-                                        </div>
-                                        <div class="pdDetail">
-                                            <h4 class="pdName">
-                                                Pellentesque rhoncus nisi in pretium tincidunt.
-                                            </h4>
-                                            <div class="pdSubDetail">
-                                                <div class="pdPrice">
-                                                    <span class="pdPriceNew">$490</span>
-                                                    <span class="pdPriceOld">$690</span>
-                                                </div>
-                                                <div class="pdRating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="pdOrigin">
-                                                <!-- <div class="pdAction">
-                                                <span class="pdLike">
-                                                    <i class="ti-heart"></i>
-                                                </span>
-                                            </div> -->
-                                                <span class="pdFrom">Poland</span>
-                                                <span class="pdBrand">Branding</span>
-                                            </div>
-                                            <div class="pdFeature">
-
-                                                <span class="deco3 hot">
-                                                    <i class="fas fa-burn"></i>
-                                                </span>
-                                                <span class="deco3 poppu ">
-                                                    <i class="fas fa-tags"></i>
-                                                </span>
-
-                                                <span class="deco3 newly">
-                                                    <i class="fas fa-paper-plane"></i>
-                                                </span>
-
-                                            </div>
-                                        </div>
-
-                                        <!-- PD label -->
-                                        <div class="pdLabelLove">
-                                            <span class="deco2">
-                                                <i class="fas fa-crown"></i>
-                                            </span>
-                                            Gold Package
-                                        </div>
-                                        <div class="pdLabelSale">
-                                            <span class="numSale">50<span>%</span>
-                                            </span>
-                                            <span class="textSale">Sale off</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-9-3">
-                                    <div class="productBox">
-                                        <div class="productImg" style="background-image: url('img/noti (2).jpg');">
-                                            <span class="flashHov"></span>
-                                        </div>
-                                        <div class="pdDetail">
-                                            <h4 class="pdName">
-                                                Sed eu sapien ac tortor maximus dignissim. </h4>
-                                            <div class="pdSubDetail">
-                                                <div class="pdPrice">
-                                                    <span class="pdPriceNew">$609</span>
-                                                    <span class="pdPriceOld">$1290</span>
-                                                </div>
-                                                <div class="pdRating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-
-                                            <div class="pdOrigin">
-                                                <!-- <div class="pdAction">
-                                                <span class="pdLike">
-                                                    <i class="ti-heart"></i>
-                                                </span>
-                                            </div> -->
-                                                <span class="pdFrom">America</span>
-                                                <span class="pdBrand">UI/UX Packages</span>
-                                            </div>
-
-                                            <div class="pdFeature">
-                                                <span class="deco3 newly">
-                                                    <i class="fas fa-paper-plane"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        <!-- PD label -->
-                                        <!-- <div class="pdLabelLove">
-                                            <span class="deco2">
-                                                <i class="fas fa-burn"></i>
-                                            </span>
-                                            Popular
-                                        </div> -->
-                                        <div class="pdLabelSale">
-                                            <span class="numSale">10<span>%</span>
-                                            </span>
-                                            <span class="textSale">Sale off</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-9-3">
-                                    <div class="productBox">
-                                        <div class="productImg" style="background-image: url('img/noti (5).jpg');">
-                                            <span class="flashHov"></span>
-                                        </div>
-                                        <div class="pdDetail">
-                                            <h4 class="pdName">
-                                                Maecenas euismod tortor quis purus ornare, sit amet feugiat enim
-                                                faucibus.
-                                            </h4>
-                                            <div class="pdSubDetail">
-                                                <div class="pdPrice">
-                                                    <span class="pdPriceNew">$229</span>
-                                                </div>
-                                                <div class="pdRating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-
-                                            <div class="pdOrigin">
-                                                <span class="pdFrom">American</span>
-                                                <span class="pdBrand">Brand, Facebook cover</span>
-                                            </div>
-                                            <div class="pdFeature">
-
-                                                <span class="deco3 hot">
-                                                    <i class="fas fa-burn"></i>
-                                                </span>
-                                                <span class="deco3 poppu ">
-                                                    <i class="fas fa-tags"></i>
-                                                </span>
-
-                                            </div>
-                                        </div>
-
-                                        <!-- PD label -->
-                                        <div class="pdLabelLove">
-                                            <span class="deco2">
-                                                <i class="fas fa-shield-alt"></i>
-                                            </span>
-                                            Slivir Package
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="col-9-3">
-                                    <div class="productBox">
-                                        <div class="productImg" style="background-image: url('img/noti (1).jpg');">
-                                            <span class="flashHov"></span>
-                                        </div>
-                                        <div class="pdDetail">
-                                            <h4 class="pdName">
-                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                            </h4>
-                                            <div class="pdSubDetail">
-                                                <div class="pdPrice">
-                                                    <span class="pdPriceNew">$399</span>
-                                                    <!-- <span class="pdPriceOld">$290</span> -->
-                                                </div>
-                                                <div class="pdRating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-
-                                            <div class="pdOrigin">
-                                                <!-- <div class="pdAction">
-                                                <span class="pdLike">
-                                                    <i class="ti-heart"></i>
-                                                </span>
-                                            </div> -->
-                                                <span class="pdFrom">WuLan</span>
-                                                <span class="pdBrand">Poster, Icon</span>
-                                            </div>
-                                            <!-- <div class="pdFeature">
-                                                <span class="deco3 newly">
-                                                    <i class="fas fa-paper-plane"></i>
-                                                </span>
-                                            </div> -->
-                                        </div>
-
-                                        <!-- PD label -->
-                                        <!-- <div class="pdLabelLove">
-                                            <span class="deco2">
-                                                <i class="fas fa-burn"></i>
-                                            </span>
-                                            Popular
-                                        </div> -->
-
-                                    </div>
-                                </div>
-
-                                <div class="col-9-3">
-                                    <div class="productBox">
-                                        <div class="productImg" style="background-image: url('img/noti (3).jpg');">
-                                            <span class="flashHov"></span>
-                                        </div>
-                                        <div class="pdDetail">
-                                            <h4 class="pdName">
-                                                Curabitur id justo quis dolor condimentum porttitor id eu purus.
-                                            </h4>
-                                            <div class="pdSubDetail">
-                                                <div class="pdPrice">
-                                                    <span class="pdPriceNew">$90</span>
-                                                    <!-- <span class="pdPriceOld">$290</span> -->
-                                                </div>
-                                                <div class="pdRating">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                </div>
-                                            </div>
-
-                                            <div class="pdOrigin">
-                                                <span class="pdFrom">Thailand</span>
-                                                <span class="pdBrand">Logo Identity</span>
-                                            </div>
-                                            <div class="pdFeature">
-
-                                                <span class="deco3 hot">
-                                                    <i class="fas fa-burn"></i>
-                                                </span>
-                                                <span class="deco3 poppu ">
-                                                    <i class="fas fa-tags"></i>
-                                                </span>
-
-                                                <span class="deco3 newly">
-                                                    <i class="fas fa-paper-plane"></i>
-                                                </span>
-
-                                            </div>
-                                        </div>
-                                        <!-- PD label -->
-                                        <!-- <div class="pdLabelLove">
-                                            <span class="deco2">
-                                                <i class="fas fa-burn"></i>
-                                            </span>
-                                            Popular
-                                        </div> -->
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <ul class="pagin topSpace">
-                            <li class="paginli">
-                                <a href="#" class="pagina ">
-                                    <i class="ti-angle-left"></i>
-                                </a>
-                            </li>
-
-                            <li class="paginli ">
-                                <a href="#" class="pagina pagina-active">1</a>
-                            </li>
-
-                            <li class="paginli">
-                                <a href="#" class="pagina">2</a>
-                            </li>
-
-                            <li class="paginli">
-                                <a href="#" class="pagina">3</a>
-                            </li>
-
-                            <li class="paginli">
-                                <a href="#" class="pagina">...</a>
-                            </li>
-
-                            <li class="paginli">
-                                <a href="#" class="pagina">14</a>
-                            </li>
-
-                            <li class="paginli">
-                                <a href="#" class="pagina">
-                                    <i class="ti-angle-right"></i>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-            </div>
 
-        </div>
-    </section>
+            </div>
+        </section>
         <!-- foot -->
         <div class="footer">
 
