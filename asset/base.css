@@ -81,11 +81,9 @@ ul {
 figure {
   margin: 0;
 }
-
-section {
+#secB {
   display: block;
   position: relative;
-  padding: 50px 0;
   width: 100%;
 }
 /* ========================= */

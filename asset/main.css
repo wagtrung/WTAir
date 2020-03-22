@@ -1081,13 +1081,14 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     color:#fff;
     border-top:4px solid var(--hove);
     background:#050413;
-    padding:30px 0 60px 0;
+    padding: 10vh 0;
 }
 
 .fTile{
     border-left:3px solid var(--hove);
-    padding: 0 10px;
-    font-size: 1.9rem;
+    padding: 0 18px;
+    margin-bottom:20px;
+    font-size: 2.3rem;
     text-transform: uppercase;
 }
 .fUl{
@@ -1119,6 +1120,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
 }
 .fDownApp{
     display:flex;
+    width:100%;
 }
 .fQr{
     width:80px;
@@ -1133,7 +1135,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
    justify-content: space-between;
 }
 .fApp img{
-   
+    width:auto;
     height:35px;
 }
 .fend{
@@ -1166,7 +1168,10 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     font-weight: 500;
     text-transform: capitalize;
   }
-  
+  .content-box{
+      position: relative;
+      z-index:3;
+  }
   .banner .content-box h2, .banner .content-box-fluid h2 {
     font-size: 60px;
     line-height: 70px;
@@ -1211,7 +1216,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     position: absolute;
     width: 100%;
     height: 100%;
-    background:linear-gradient(-30deg,#03e59ab0 30%, transparent 50%);
+    background: linear-gradient(23deg,#03e59a70 34%, transparent 74%);
   }
 
   /*************************
@@ -1219,6 +1224,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
  */
  .banner {
     background-color: #f7f7f7;
+    padding: 10vh 0;
    
   }
   
@@ -1264,6 +1270,6 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
   #Layer_1 {
     position: absolute;
     width: 200px;
-    top: 150px;
-    left: -7%;
+    top: 0;
+    left: -15vw;
   }
