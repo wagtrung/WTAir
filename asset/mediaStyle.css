@@ -13,13 +13,16 @@
 .header_navbar-ul{
     margin:auto;
 }
+.search{
+    display: none;
+}
 #bannerImg{
     transform: scale(.6);
 }
 
 .onclip{
     width: 100vw;
-    height: 49vh;
+    height: 54vh;
 }
 
 #Layer_1 {
@@ -47,15 +50,19 @@
 .productContainer {
     width: 100vw;}
 .col-9-3 {
-    margin: 20px;
+    margin: 10px 20px;
     width: 100%;
 }
 .paginli{
     margin:0;
 }
 .col-12-2_4 {
+    text-align: center;
     margin: 20px;
     width: 100%;
+}
+.fTile {
+    display: inline-block;
 }
 .fUl {
     margin-bottom:10px;
@@ -70,6 +77,73 @@
 }
 .fQr {
     width: 126px;}
+
+
+/* Product */
+
+.productBox {
+    display: flex;
+    height: 160px;
+}
+.productImg {
+    padding-top:0;
+    padding-right: 42%;
+}
+.pdDetail {
+    padding: 14px;
+}
+.pdSubDetail {
+    align-items: flex-start;
+}
+.pdName{
+    margin-top:36px;
+}
+.pdPrice{
+       flex-wrap:nowrap;
+}
+.pdRating i{
+    font-size: .8rem;
+}
+
+.pdOrigin{
+    display: none;
+}
+.pdFeature{
+    top: 0;
+    left:auto;
+    margin-top: 10px;
+    height: 32px;
+    padding: 0;
+}
+.nofeature{
+    margin-top:19px;
+}
+.pdLabelLove{
+    top: -14px;
+    left: -8px;
+    height: 11px;
+    font-size: 1.2rem;
+    padding: 16px 8px;
+}
+.deco2 {
+
+    width: 25px;
+    height: 25px;
+
+}
+.pdLabelSale {
+    bottom: 0;
+    left: 0;
+    top:auto;
+    right: auto;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.pdLabelSale::after{
+    display:none;
+}
+.numSale {
+    font-size: 2.9rem;}
 
 }
 /* Tablet >= 740 and <1024*/
