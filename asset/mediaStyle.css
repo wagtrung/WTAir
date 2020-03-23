@@ -87,7 +87,7 @@
 }
 .productImg {
     padding-top:0;
-    padding-right: 42%;
+    padding-right: 38%;
 }
 .pdDetail {
     padding: 14px;
@@ -96,10 +96,13 @@
     align-items: flex-start;
 }
 .pdName{
-    margin-top:36px;
+    margin-top:32px;
 }
 .pdPrice{
        flex-wrap:nowrap;
+}
+.pdPriceNew {
+    font-size: 2.2rem;
 }
 .pdRating i{
     font-size: .8rem;
@@ -127,9 +130,15 @@
 }
 .deco2 {
 
-    width: 25px;
-    height: 25px;
+  display:none;
 
+}
+.deco3 {
+    width:16px;
+    height: 16px;
+}
+.deco3 i{
+    font-size:1rem;
 }
 .pdLabelSale {
     bottom: 0;
