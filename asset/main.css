@@ -17,6 +17,7 @@
 /* NAV HEADER ----------------------------------------------------------------*/
 /* -------------------------------------------------------------------------- */
 .navbar{
+    position:relative;
     display:flex;
     justify-content:space-between;
     padding:20px 0;
@@ -1276,3 +1277,119 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     top: 0;
     left: -15vw;
   }
+
+
+  /* menu nav */
+
+  .overcover{
+    display: none;
+    position:fixed;
+    top:0;
+    left: 0;
+    bottom:0;
+    right:0;
+    backdrop-filter: blur(4px);
+    background-color: rgba(41, 41, 41, 0.253);
+    width:100%;
+    height: 100%;
+    z-index: 1000;
+  }
+  .burgernav{
+      position:fixed;
+      top:0;
+      left: 0;
+      bottom:0;
+      z-index: 1200;
+      display:none;
+      }
+.burgerMenu{
+    position: fixed;
+    z-index: 1200;
+    top:0;
+    left: 0;
+    bottom:0;
+    background:var(--dblue);
+      width:320px;
+      max-width:100%;
+      padding:80px 28px 10px;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translate(-100%,0%);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  .burgernavUl{
+    
+  }
+  .burgernavLi{
+  }
+  .burgernavA{
+      color:#fff;
+      font-size:1.8rem;
+      line-height:2.4rem;
+      padding: 20px 0;
+    display: block;
+    transition: color 0.3s ease;
+  }
+  .burgernavA:hover
+{
+  color: var(--hove);
+}
+  #menuToggle{
+    position: absolute;
+    top: 30px;
+    left:30px;
+    z-index: 1220;
+  }
+  #menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
+    opacity 0.55s ease;
+}
+
+#menuToggle span:nth-child(2)
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-child(1)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle span:nth-child(3){
+    transform-origin: 0% 100%;
+}
+
+/* act */
+.act #menuToggle span:nth-child(1)
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -2px);
+
+}
+.act #menuToggle span:nth-child(2)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.act #menuToggle span:nth-child(3)
+{
+  transform: rotate(-45deg) translate(0px, 2px);
+}
+
+
+.act .burgerMenu{
+    transform: translate(0%, 0%);
+
+}
+.act .overcover{
+ animation: fade .3s ease;
+    display:block;
+}

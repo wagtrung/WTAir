@@ -125,6 +125,13 @@ $('.ctgli').click(function(){
     $(this).toggleClass('wtok');
 });
 
-   
+$('#menuToggle').click(function(){
+    $(this).parent().toggleClass('act');
+    $('.wrapper').toggleClass('act');
+});
+$('.overcover').click(function(){
+    $('#menuToggle').parent().removeClass('act');
+    $('.wrapper').removeClass('act');
+});
 
 
