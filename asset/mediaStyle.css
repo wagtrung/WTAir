@@ -159,6 +159,9 @@
 .numSale {
     font-size: 2.9rem;}
 
+.searchMobile{
+    display:block;
+}
 }
 /* Tablet >= 740 and <1024*/
 @media only screen and (min-width:46.25em) and (max-width:64em){

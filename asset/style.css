@@ -542,4 +542,159 @@
   -webkit-animation: jello .8s ease 1s 2;
           animation: jello .8s ease 1s 2;
 }
+
+.searchMobile {
+  display: none;
+}
+
+body.search-active {
+  overflow: hidden;
+}
+
+body.search-active .search-input {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  pointer-events: all;
+  z-index: 3100;
+}
+
+body.search-active .icon-close {
+  opacity: 1;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  z-index: 3100;
+}
+
+body.search-active .control {
+  cursor: pointer;
+}
+
+body.search-active .control .btn-material {
+  background: var(--dblue);
+  -webkit-transform: scale(50);
+          transform: scale(50);
+}
+
+body.search-active .control .icon-material-search {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  opacity: 0;
+}
+
+body.search-active .btnSeachMobile {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+}
+
+body.search-active .search-input {
+  width: 400px;
+  max-width: 90%;
+}
+
+.icon-close {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 30px;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-input {
+  height: 80px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  pointer-events: none;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-input .input-search {
+  width: 100%;
+  color: #fff;
+  font-size: 2.6rem;
+  border: 0;
+  outline: 0;
+  padding: 6px 10px;
+  border-left: 3px solid var(--hove);
+  background: transparent;
+}
+
+.search-input .input-search::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.search-input .input-search:-ms-input-placeholder {
+  color: #fff;
+}
+
+.search-input .input-search::-ms-input-placeholder {
+  color: #fff;
+}
+
+.search-input .input-search::placeholder {
+  color: #fff;
+}
+
+.control {
+  cursor: pointer;
+}
+
+.control .btn-material {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: transparent;
+  -webkit-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2999;
+}
+
+.control .icon-material-search {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  color: #fff;
+  z-index: 3000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.btnSeachMobile {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding: 20px;
+  background: var(--hove);
+  color: #fff;
+  z-index: 4000;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.btnSeachMobile:hover {
+  background: var(--hoveL);
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */

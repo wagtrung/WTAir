@@ -1334,7 +1334,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     padding: 4px;
     position: absolute;
     top: 30px;
-    left:25px;
+    left:15px;
     z-index: 1220;
     transition:.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }

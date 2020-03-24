@@ -52,7 +52,7 @@ body {
 }
 .wrapper{
   overflow: hidden;
-    width: 100%;
+  width: 100%;
 }
 a{
   transition: all 300ms ease-in-out;
