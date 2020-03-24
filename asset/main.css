@@ -1307,7 +1307,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     bottom:0;
     height: 100vh;
     background:var(--dblue);
-      width:320px;
+      width:360px;
       max-width:100%;
       padding:80px 28px 10px;
       list-style-type: none;
@@ -1437,7 +1437,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
 /* act ====================================*/
 .act #menuToggle{
     top: 30px;
-    left:265px;
+    left:285px;
 }
 .act #menuToggle span:nth-child(1)
 {
