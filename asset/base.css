@@ -45,7 +45,7 @@ html{
 body {
   font-family: 'Muli', sans-serif ;
   color: var(--textColor);
-  background-color: #fff;
+  background-color: rgb(245, 245, 245);
   font-size: 1.5rem;
   line-height: 2.7rem;
   color: rgb(108, 108, 111);
@@ -109,6 +109,11 @@ figure {
   width:calc((100%/12)*3);
 
 }
+.col-4{
+  padding:12px;
+  width:calc((100%/12)*4);
+
+}
 .col-9{
   padding:0 12px 0 12px;
   width:calc((100%/12)*9);
@@ -121,7 +126,10 @@ figure {
   width:calc((100%/9)*3);
   
 }
-
+.col-12{
+  padding:0 12px 0 12px;
+  width:100%;
+}
 .col-12-2_4{
   padding:0 12px 0 12px;
   width:calc((100%/12)*2.4);

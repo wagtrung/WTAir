@@ -1472,3 +1472,51 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
 .act .burgernavUl{
     transform: translateX(0%);
 }
+
+/* Service tab */
+.serviceTile{
+    color: var(--dblue);
+    font-family: Poppins, sans-serif;
+    font-size: 6rem;
+    line-height:6rem;
+    margin-bottom: 30px;
+    padding:0 20px;
+    border-left:10px solid var(--hove);
+}
+.serviceBox{
+    display:block;
+    background-color:var(--dblueL);
+    width:100%;
+    padding:20px;
+  height:250px;
+  border-radius: 3px;
+}
+.serviceDetail{
+   
+}
+.serviceInfor{
+    padding:20px 0;
+}
+.serviceDetailTile{
+    color: var(--hove);
+    font-size: 4rem;
+    line-height:4rem;
+}
+.serviceDetailSu{
+    color:#fff;
+}
+.deco5{
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #10114a;
+    padding: 5px;
+    box-sizing: content-box;
+    transition: .5s;
+}
+.deco5 i{
+    margin:auto;
+    font-size: 3rem;
+    color:var(--hove)
+}
