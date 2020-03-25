@@ -574,6 +574,7 @@ body.search-active .control .btn-material {
   background: var(--dblue);
   -webkit-transform: scale(50);
           transform: scale(50);
+  z-index: 3000;
 }
 
 body.search-active .control .icon-material-search {

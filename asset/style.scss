@@ -473,6 +473,7 @@ body {
       .btn-material {
         background:var(--dblue);
         transform: scale(50);
+        z-index: 3000;
       }
       .icon-material-search {
         transform: rotate(-90deg);
@@ -481,7 +482,7 @@ body {
     }
     .btnSeachMobile{
       transform:translateY(0%);
-  opacity: 1;
+      opacity: 1;
     }
     .search-input {
       width:400px;
@@ -567,7 +568,6 @@ body {
   &:hover{
     background:var(--hoveL);
     cursor:pointer;
-
   }
 }
 
