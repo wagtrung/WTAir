@@ -1305,7 +1305,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     top:0;
     left: 0;
     bottom:0;
-    height: 100vh;
+    
     background:var(--dblue);
       width:360px;
       max-width:100%;
