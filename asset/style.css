@@ -548,7 +548,7 @@
 }
 
 #menuToggle.search-active {
-  z-index: 200px;
+  z-index: 0;
 }
 
 .burgerMenu {

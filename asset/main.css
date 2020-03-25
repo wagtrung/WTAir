@@ -1279,7 +1279,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
   }
 
 
-  /* menu nav */
+  /* mobile menu nav */
 
   .overcover{
     display: none;
@@ -1298,23 +1298,22 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
       display:none;
       position:fixed;
       z-index:2000;
-      }
+}
 .burgerMenu{
     position: fixed;
     z-index:2000;
     top:0;
     left: 0;
     bottom:0;
-    
     background:var(--dblue);
-      width:360px;
-      max-width:100%;
-      padding:110px 28px 10px;
-      list-style-type: none;
-      -webkit-font-smoothing: antialiased;
-      transform-origin: 0% 0%;
-      transform: translate(-100%,0%);
-      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    width:360px;
+    max-width:100%;
+    padding:110px 28px 10px;
+    list-style-type: none;
+    /* -webkit-font-smoothing: antialiased; */
+    transform-origin: 0% 0%;
+    transform: translate(-100%,0%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
   .burgernavUl{
     margin-top:40px;
@@ -1438,7 +1437,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     margin-left:6px;
     color: var(--hove);
 }
-/* act ====================================*/
+/* jquery act ====================================*/
 .act #menuToggle{
     top: 41px;
     left: 302px;
