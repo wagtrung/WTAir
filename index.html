@@ -24,33 +24,62 @@
 </head>
 
 <body>
-    <div class="searchMobile">
-        <div class='control'>
-            <div class='btn-material'> </div>
-            <i class='icon-material-search fas fa-search'></i>
-        </div>
-        <i class='icon-close fas fa-times'></i>
-        <div class='search-input'>
-            <input class='input-search' placeholder='Search by keyword' type='text'>
-        </div>
 
-        <div class="btnSeachMobile">
-            Check It Now
-        </div>
-    </div>
     <div class="wrapper">
-
-        <!-- 1 head -->
+        <!-- overlayBlur fixed -->
         <div class="overcover"></div>
-        <!-- Tablet + Mobile nav -->
-        <div class="burgernav">
 
+        <!-- fixed -->
+        <div class="burgernav">
+            
+            <!-- 3-line relative -->
             <div id="menuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
+
+            <!-- fixed -->
             <div class="burgerMenu">
+                <div class="searchMobile">
+
+                    <div class='control'>
+                        <!-- openSearchBtn absolute -->
+                        <i class='icon-material-search fas fa-search'></i>
+                        <!-- scaleFitScreen absolute -->
+                        <div class='btn-material'></div>
+                    </div>
+
+                    <!-- closeSearchBtn absolute -->
+                    <i class='icon-close fas fa-times'></i>
+
+                    <!-- searchContent absolute   -->
+                    <div class='search-input'>
+                        <input class='input-search' placeholder='Search by keyword' type='text'>
+
+                        <div class="SearchByMobile">
+                            <h2>Search by</h2>
+                            <label class="x">by WT
+                                <input type="radio" checked="checked" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="x">by Google
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="x">by Github
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="x">by Bing
+                                <input type="radio" name="radio">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="btnSeachMobile"> Check It Now</div>
+                </div>
 
                 <div class="burgerInforTab">
                     <div class="inforTabImg"></div>
@@ -1132,7 +1161,7 @@
 
     </div>
 
-        <script src="asset/jsFile.js"></script>
+    <script src="asset/jsFile.js"></script>
 
 </body>
 

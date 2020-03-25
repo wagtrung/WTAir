@@ -547,11 +547,19 @@
   display: none;
 }
 
-body.search-active {
+#menuToggle.search-active {
+  z-index: 200px;
+}
+
+.burgerMenu {
   overflow: hidden;
 }
 
-body.search-active .search-input {
+.burgerMenu.search-active {
+  overflow: hidden;
+}
+
+.burgerMenu.search-active .search-input {
   opacity: 1;
   -webkit-transform: none;
           transform: none;
@@ -559,45 +567,44 @@ body.search-active .search-input {
   z-index: 3100;
 }
 
-body.search-active .icon-close {
+.burgerMenu.search-active .icon-close {
   opacity: 1;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
-  z-index: 3100;
+  z-index: 4100;
 }
 
-body.search-active .control {
+.burgerMenu.search-active .control {
   cursor: pointer;
 }
 
-body.search-active .control .btn-material {
-  background: var(--dblue);
+.burgerMenu.search-active .control .btn-material {
+  background: #0e0f3a;
   -webkit-transform: scale(50);
           transform: scale(50);
   z-index: 3000;
 }
 
-body.search-active .control .icon-material-search {
+.burgerMenu.search-active .control .icon-material-search {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   opacity: 0;
 }
 
-body.search-active .btnSeachMobile {
+.burgerMenu.search-active .btnSeachMobile {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   opacity: 1;
 }
 
-body.search-active .search-input {
-  width: 400px;
-  max-width: 90%;
+.burgerMenu.search-active .search-input {
+  width: 360px;
 }
 
 .icon-close {
-  position: fixed;
-  top: 30px;
-  right: 30px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
   color: #FFF;
   cursor: pointer;
   font-size: 30px;
@@ -607,25 +614,29 @@ body.search-active .search-input {
 }
 
 .search-input {
-  height: 80px;
   position: absolute;
-  top: 20%;
-  left: 10%;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  padding: 110px 30px 10px;
   pointer-events: none;
   opacity: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .search-input .input-search {
   width: 100%;
   color: #fff;
   font-size: 2.6rem;
+  line-height: 2.8rem;
   border: 0;
   outline: 0;
-  padding: 6px 10px;
-  border-left: 3px solid var(--hove);
-  background: transparent;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid var(--hove);
+  background: var(--dblue);
 }
 
 .search-input .input-search::-webkit-input-placeholder {
@@ -644,6 +655,64 @@ body.search-active .search-input {
   color: #fff;
 }
 
+.search-input .SearchByMobile {
+  background: var(--dblue);
+  padding: 10px;
+}
+
+.search-input .SearchByMobile .x {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.search-input .SearchByMobile .x:hover input ~ .checkmark {
+  background-color: var(--hoveL);
+}
+
+.search-input .SearchByMobile .x input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.search-input .SearchByMobile .x input:checked ~ .checkmark {
+  background-color: var(--hove);
+}
+
+.search-input .SearchByMobile .x input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.search-input .SearchByMobile .x .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.search-input .SearchByMobile .x .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
 .control {
   cursor: pointer;
 }
@@ -651,27 +720,27 @@ body.search-active .search-input {
 .control .btn-material {
   position: absolute;
   top: 30px;
-  right: 30px;
+  left: 30px;
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background: transparent;
+  background: #0e0f3a;
   -webkit-transform-origin: 50%;
           transform-origin: 50%;
   -webkit-transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 2000;
 }
 
 .control .icon-material-search {
-  position: fixed;
-  top: 30px;
-  right: 30px;
-  font-size: 30px;
+  padding: 10px;
+  position: absolute;
+  top: 36px;
+  left: 36px;
+  font-size: 20px;
   color: #fff;
-  z-index: 2000;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  z-index: 3000;
 }
 
 .btnSeachMobile {
@@ -680,10 +749,11 @@ body.search-active .search-input {
   right: 0;
   left: 0;
   margin: 0;
+  width: 100%;
   text-align: center;
   font-size: 2.4rem;
   font-weight: bold;
-  padding: 20px;
+  padding: 15px;
   background: var(--hove);
   color: #fff;
   z-index: 4000;

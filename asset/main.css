@@ -1301,7 +1301,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
       }
 .burgerMenu{
     position: fixed;
-    z-index: 1200;
+    z-index: 2000;
     top:0;
     left: 0;
     bottom:0;
@@ -1309,7 +1309,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     background:var(--dblue);
       width:360px;
       max-width:100%;
-      padding:80px 28px 10px;
+      padding:110px 28px 10px;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
       transform-origin: 0% 0%;
@@ -1332,10 +1332,10 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
   }
   #menuToggle{
     padding: 4px;
-    position: absolute;
+    position: relative;
     top: 30px;
     left:15px;
-    z-index: 1220;
+    z-index: 2001;
     transition:.5s cubic-bezier(0.77,0.2,0.05,1.0);
   }
   #menuToggle span{
@@ -1343,9 +1343,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
-    position: relative;
     background: #fff;
-    z-index: 1;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
     background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), 
     opacity 0.55s ease;
@@ -1464,3 +1462,4 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
  animation: fade .3s ease;
     display:block;
 }
+

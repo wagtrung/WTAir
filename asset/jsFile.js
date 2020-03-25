@@ -132,14 +132,18 @@ $('#menuToggle').click(function(){
 $('.overcover').click(function(){
     $('#menuToggle').parent().removeClass('act');
     $('.wrapper').removeClass('act');
+  
 });
 
 // search nav mobile
 $('.control').click( function(){
-    $('body').addClass('search-active');
+    $('.burgerMenu').addClass('search-active');
+    $('#menuToggle').addClass('search-active');
     $('.input-search').focus();
   });
   
   $('.icon-close').click( function(){
-    $('body').removeClass('search-active');
+    $('.burgerMenu').removeClass('search-active');
+    $('#menuToggle').removeClass('search-active');
+
   });
