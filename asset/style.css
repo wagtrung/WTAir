@@ -582,7 +582,6 @@
   background: #0e0f3a;
   -webkit-transform: scale(50);
           transform: scale(50);
-  z-index: 3000;
 }
 
 .burgerMenu.search-active .control .icon-material-search {
@@ -629,7 +628,7 @@
 .search-input .input-search {
   width: 100%;
   color: #fff;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   line-height: 2.8rem;
   border: 0;
   outline: 0;
@@ -657,24 +656,40 @@
 
 .search-input .SearchByMobile {
   background: var(--dblue);
-  padding: 10px;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.search-input .SearchByMobile h2 {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #130b2b;
+  padding: 0 0 15px 0;
+}
+
+.search-input .SearchByMobile h2 i {
+  margin-right: 10px;
 }
 
 .search-input .SearchByMobile .x {
   position: relative;
   display: block;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 40px;
+  margin: 14px 0;
   cursor: pointer;
   font-size: 2rem;
+  color: #fff;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 
+transition
 .search-input .SearchByMobile .x:hover input ~ .checkmark {
-  background-color: var(--hoveL);
+  background-color: #a0fde7;
 }
 
 .search-input .SearchByMobile .x input {
@@ -710,7 +725,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: white;
+  background: #fff;
 }
 
 .control {
@@ -718,6 +733,7 @@
 }
 
 .control .btn-material {
+  z-index: 3000;
   position: absolute;
   top: 30px;
   left: 30px;
@@ -740,7 +756,7 @@
   color: #fff;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  z-index: 3000;
+  z-index: 3100;
 }
 
 .btnSeachMobile {
