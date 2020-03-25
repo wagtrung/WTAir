@@ -1297,11 +1297,11 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
   .burgernav{
       display:none;
       position:fixed;
-      z-index: 2000;
+      z-index:2000;
       }
 .burgerMenu{
     position: fixed;
-    z-index: 2000;
+    z-index:2000;
     top:0;
     left: 0;
     bottom:0;
@@ -1318,6 +1318,8 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
   }
   .burgernavUl{
     margin-top:40px;
+    transition:.5s .4s;
+    transform:translateX(-100%);
   }
   .burgernavLi{
   }
@@ -1371,6 +1373,8 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     align-items: center;
     justify-content: center;
     margin: 20px 0px;
+    transition:.7s .2s;
+    transform: translateX(-100%);
 }
 .inforTabImg{
     z-index: 2;
@@ -1465,3 +1469,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     display:block;
 }
 
+.act .burgerInforTab,
+.act .burgernavUl{
+    transform: translateX(0%);
+}

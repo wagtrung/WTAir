@@ -490,6 +490,7 @@ $transition: all .5s ease;
       opacity: 1;
     }
     .search-input {
+      transform:translateX(0%);
       width:360px;
      }
   }
@@ -515,7 +516,8 @@ $transition: all .5s ease;
   padding: 110px 30px 10px;
   pointer-events: none;
   opacity: 0;
-  transition: .3s;
+  transition: .5s .2s;
+  transform:translateX(-100%);
   .input-search {
     width:100%;
     color: #fff;
@@ -556,7 +558,6 @@ $transition: all .5s ease;
     font-size: 2rem;
     color:#fff;
     user-select: none;
-   
     &:hover input ~ .checkmark {
       background-color: #76fcc8;
     }
@@ -610,7 +611,7 @@ $transition: all .5s ease;
     border-radius: 100%;
     background:#0e0f3a;
     transform-origin:50%;
-    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all .7s cubic-bezier(1, 0, 0, 1);
   }
   .icon-material-search {
     padding:10px;
@@ -640,7 +641,7 @@ $transition: all .5s ease;
   z-index: 4000;
   transform:translateY(100%);
   opacity: 0;
-  transition:.5s;
+  transition:.5s .2s;
   &:hover{
     background:var(--hoveL);
     cursor:pointer;
