@@ -549,11 +549,13 @@ $transition: all .5s ease;
       margin-right: 10px;
     }
   }
+  .radioList{
+    padding:4px 0;
   .x {
     position:relative;
     display: block;
     padding-left: 40px;
-    margin: 14px 0;
+    margin: 16px 0;
     cursor: pointer;
     font-size: 2rem;
     color:#fff;
@@ -595,6 +597,7 @@ $transition: all .5s ease;
       }
     }
   }
+}
 }
 
 }

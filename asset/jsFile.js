@@ -124,7 +124,7 @@ $(".ctgli:has(.ctgulChild)").click(function (e) {
 $('.ctgli').click(function(){
     $(this).toggleClass('wtok');
 });
-
+// turn nav to x
 $('#menuToggle').click(function(){
     $(this).parent().toggleClass('act');
     $('.wrapper').toggleClass('act');
@@ -135,7 +135,7 @@ $('.overcover').click(function(){
   
 });
 
-// search nav mobile
+// search nav mobile ============================
 $('.control').click( function(){
     $('.burgerMenu').addClass('search-active');
     $('#menuToggle').addClass('search-active');
@@ -145,5 +145,9 @@ $('.control').click( function(){
   $('.icon-close').click( function(){
     $('.burgerMenu').removeClass('search-active');
     $('#menuToggle').removeClass('search-active');
-
   });
+
+  $('.h2Radio').click(function(){
+    $('.radioList').slideToggle();
+});
+// =======================

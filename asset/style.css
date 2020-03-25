@@ -598,6 +598,7 @@
 }
 
 .burgerMenu.search-active .search-input {
+  overflow-y: scroll;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   width: 360px;
@@ -678,11 +679,15 @@
   margin-right: 10px;
 }
 
-.search-input .SearchByMobile .x {
+.search-input .SearchByMobile .radioList {
+  padding: 4px 0;
+}
+
+.search-input .SearchByMobile .radioList .x {
   position: relative;
   display: block;
   padding-left: 40px;
-  margin: 14px 0;
+  margin: 16px 0;
   cursor: pointer;
   font-size: 2rem;
   color: #fff;
@@ -692,25 +697,25 @@
           user-select: none;
 }
 
-.search-input .SearchByMobile .x:hover input ~ .checkmark {
+.search-input .SearchByMobile .radioList .x:hover input ~ .checkmark {
   background-color: #76fcc8;
 }
 
-.search-input .SearchByMobile .x input {
+.search-input .SearchByMobile .radioList .x input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
 
-.search-input .SearchByMobile .x input:checked ~ .checkmark {
+.search-input .SearchByMobile .radioList .x input:checked ~ .checkmark {
   background-color: var(--hove);
 }
 
-.search-input .SearchByMobile .x input:checked ~ .checkmark:after {
+.search-input .SearchByMobile .radioList .x input:checked ~ .checkmark:after {
   display: block;
 }
 
-.search-input .SearchByMobile .x .checkmark {
+.search-input .SearchByMobile .radioList .x .checkmark {
   position: absolute;
   top: 0;
   left: 0;
@@ -722,7 +727,7 @@
   transition: .5s;
 }
 
-.search-input .SearchByMobile .x .checkmark:after {
+.search-input .SearchByMobile .radioList .x .checkmark:after {
   content: "";
   position: absolute;
   display: none;
