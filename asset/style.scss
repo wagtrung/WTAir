@@ -556,9 +556,9 @@ $transition: all .5s ease;
     font-size: 2rem;
     color:#fff;
     user-select: none;
-    transition
+   
     &:hover input ~ .checkmark {
-      background-color: #a0fde7;
+      background-color: #76fcc8;
     }
     input {
       position: absolute;
@@ -580,6 +580,7 @@ $transition: all .5s ease;
       width: 25px;
       background-color: #eee;
       border-radius: 50%;
+      transition:.5s;
       &:after {
         content: "";
         position: absolute;

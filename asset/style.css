@@ -687,9 +687,8 @@
           user-select: none;
 }
 
-transition
 .search-input .SearchByMobile .x:hover input ~ .checkmark {
-  background-color: #a0fde7;
+  background-color: #76fcc8;
 }
 
 .search-input .SearchByMobile .x input {
@@ -714,6 +713,8 @@ transition
   width: 25px;
   background-color: #eee;
   border-radius: 50%;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .search-input .SearchByMobile .x .checkmark:after {
