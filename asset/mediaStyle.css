@@ -1,17 +1,11 @@
 
-/* phone < 1024px */
+/* phone+tablet < 1024px */
 @media only screen and (max-width:64em){
 
 .burgernav{
     display:block;
 }
-
-}
-
-
-/* phone < 740px */
-@media only screen and (max-width:46.1875em){
-    
+   
 .headright{
     display: none;
 }
@@ -163,16 +157,18 @@
     display:block;
 }
 }
+
+
+/* phone < 740px */
+@media only screen and (max-width:46.1875em){
+ 
+}
 /* Tablet >= 740 and <1024*/
 @media only screen and (min-width:46.25em) and (max-width:64em){
 
 }
 
-
-
 /* pc >=1024 */
 @media only screen and (min-width:64em){
     
-
-
 }
