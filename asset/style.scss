@@ -457,7 +457,8 @@ $transition: all .5s ease;
   }
 }
 .burgerMenu {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y:scroll;
   &.search-active {
     overflow: hidden;
     .search-input {
