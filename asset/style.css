@@ -552,7 +552,8 @@
 }
 
 .burgerMenu {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .burgerMenu.search-active {
