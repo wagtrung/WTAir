@@ -132,6 +132,8 @@ $('#menuToggle').click(function(){
 $('.overcover').click(function(){
     $('#menuToggle').parent().removeClass('act');
     $('.wrapper').removeClass('act');
+    $('.burgerMenu').removeClass('search-active');
+    $('#menuToggle').removeClass('search-active');
   
 });
 
