@@ -45,10 +45,9 @@ html{
 body {
   font-family: 'Muli', sans-serif ;
   color: var(--textColor);
-  background-color: rgb(245, 245, 245);
+  background-color: #f4fffb9c;
   font-size: 1.5rem;
   line-height: 2.7rem;
-  color: rgb(108, 108, 111);
 }
 .wrapper{
   overflow: hidden;
@@ -67,8 +66,27 @@ p{
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
 }
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+  font-weight:bold;
+}
+
+h2 {font-size: 2.441em;
+  font-weight:bold;}
+
+h3 {font-size: 1.953em;
+  font-weight:bold;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
 
 img {
   display: block;
@@ -85,11 +103,7 @@ ul {
 figure {
   margin: 0;
 }
-#secB {
-  display: block;
-  position: relative;
-  width: 100%;
-}
+
 /* ========================= */
 .grid{
     margin: auto;
@@ -99,6 +113,7 @@ figure {
 
 .row{
   display:flex;
+  justify-content:center;
   flex-wrap: wrap;
   margin: 0 -12px 0 -12px;
 }
@@ -111,7 +126,7 @@ figure {
 }
 .col-4{
   padding:12px;
-  width:calc((100%/12)*4);
+  max-width:calc((100%/12)*4);
 
 }
 .col-9{
@@ -488,3 +503,6 @@ margin: auto;
 }
 
 
+section{
+  padding:40px 0;
+}

@@ -337,6 +337,7 @@
           align-items: center;
   font-weight: 700;
   padding: 4px 12px;
+  margin-right:10px;
   text-transform: capitalize;
   -webkit-transition: .5s;
   transition: .5s;

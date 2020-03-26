@@ -37,7 +37,9 @@
 .col-3,.category{
     display:none;
 }
-
+.col-4{
+    max-width: 100%;
+}
 .col-9 {
     max-width: 100%;
     width:100%;
@@ -86,7 +88,7 @@
 }
 .productImg {
     padding-top:0;
-    padding-right: 38%;
+    min-width: 162px;
 }
 .pdDetail {
     padding: 14px;
@@ -157,11 +159,14 @@
     display:block;
 }
 }
-
+.pdPriceOld{
+    font-size:1.2rem;
+}
 
 /* phone < 740px */
 @media only screen and (max-width:46.1875em){
- 
+    #ServiceFoot {
+        bottom: -5%;}
 }
 /* Tablet >= 740 and <1024*/
 @media only screen and (min-width:46.25em) and (max-width:64em){
