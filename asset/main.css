@@ -516,7 +516,6 @@ input[value="text"]:required {
   
 
   input:focus{
-    
     border-bottom:1px solid transparent;
   }
 
