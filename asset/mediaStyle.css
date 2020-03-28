@@ -45,9 +45,146 @@
     width:100%;
     margin: auto;
 }
-.filterBar{
+.sortBy{
+    /* position: absolute;
+    top: 3px;
+    left: 10px;
+    color: var(--dblue);
+    margin: 10px;
+    font-size: 20px; */
     display: none;
 }
+.filterTag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    order: 0;
+    min-width: 100%;
+}
+.filterBar{
+    background-color: #ffffff;
+    /* box-shadow: 0 8px 17px rgba(56, 255, 212, 0.15); */
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+.filterBar .btnFilter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0px;
+    flex: 1;
+    color: #b9b9b9;
+    font-size: 1.4rem;
+    margin-right: 0;
+}
+.btnFilter:last-child{
+    margin-right: 0;
+}
+
+
+.btnlightHove{
+    background:transparent;
+}
+
+.filterBar .btnFilter .deco {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    padding: 0;
+    background: #dcdcdc;
+}
+.filterBar .btnFilter .deco i {
+    font-size: 1rem;
+    color: #fff;
+}
+.filterBar .btnFilter:hover {
+    color: #04ca88;
+    background: #e8fff5;
+}
+.filterBar .btnFilter:hover .deco {
+    background: #04ca88;
+  }
+  .filterBar .filterBtnActive:hover {
+    color: #fff;
+    background: var(--hove);
+  }
+  .filterBar .filterBtnActive:hover .deco{
+    color: #fff;
+    background: #03e5a4;
+  }
+
+  .filterBar .filterBtnActive {
+    color: #ffffff;
+}
+.filterBar .filterBtnActive .deco{
+    background:#03e5a4;
+}
+.filterFeature {
+    flex:1;
+    justify-content: center;
+    align-items: center;
+}
+.filterCat{
+    padding: 11px 19px 25px;
+    border-top: 1px solid #f1f1f1;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.filterCatLi{
+    list-style: none;
+    /* border: 1px solid #9fdcc8; */
+    border-radius: 50px;
+    padding: 0px 12px;
+    margin: 20px 10px 0 0;
+    display: flex;
+    align-items: center;
+    transition: .3s;
+    background: #EDFAF3;
+    color: #00d192;
+}
+.filterCatLi:hover{
+    color:#fff;
+    background:#00d192;
+}
+.filterCatLi:hover .filterCount{
+
+    background:#36e7b2;
+}
+.filterCatA{
+    font-size: 1.3rem;
+    padding: 4px 10px 4px 6px;
+}
+.filterCount{
+    background:#00d192;
+    padding: 4px 6px;
+    border-radius: 50px;
+    font-size: .9rem;
+    color: #fff;
+    line-height: .9rem;
+}
+
+.filterBar .select2 {
+    /* padding: 6px 14px;
+    margin: 8px 0;
+    min-width: 100%; */
+    display: none;
+ 
+}
+.filterBar .select2 span{
+    /* font-size: 1.4rem; */
+    display: none;
+}
+
+.filterPageContent{
+    display: none;
+}
+
+
 .productContainer {
     width: 100vw;}
 .col-9-3 {
@@ -92,6 +229,7 @@
 }
 .pdDetail {
     padding: 14px;
+    width: 100%;
 }
 .pdSubDetail {
     align-items: flex-start;
