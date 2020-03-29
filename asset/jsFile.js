@@ -153,3 +153,14 @@ $('.control').click( function(){
     $('.radioList').slideToggle();
 });
 // =======================
+// filter  ctg + tag on moblie=========================
+$('.ctgMobil').click(function(){
+    $('.category').parent().addClass('slideCtg');
+});
+$('.closeCatalog').click(function(){
+    $('.category').parent().removeClass('slideCtg');
+});
+
+$('.tagMobil').click(function(){
+    $('.filterCat').slideToggle();
+});

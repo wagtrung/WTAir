@@ -33,9 +33,30 @@
 .content-box {
     text-align: center;
 }
-
-.col-3,.category{
-    display:none;
+/* ctg on mobile */
+.category{
+    margin: 0;
+    position: fixed;
+    min-width: 100%;
+    z-index: 3000;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 0%);
+    transition:.5s;
+}
+.slideCtg .category{
+    transform: translate(0%, 0%);
+}
+.ctghead h3 {
+    margin: 0;
+}
+.closeCatalog{
+    display:block;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2.4rem;
+    line-height: 1rem;
 }
 .col-4{
     max-width: 100%;
@@ -46,13 +67,13 @@
     margin: auto;
 }
 .sortBy{
-    /* position: absolute;
-    top: 3px;
+    position: absolute;
+    top: -47px;
     left: 10px;
-    color: var(--dblue);
+    color: #00714c;
     margin: 10px;
-    font-size: 20px; */
-    display: none;
+    font-size: 20px;
+
 }
 .filterTag {
     display: flex;
@@ -64,10 +85,10 @@
 }
 .filterBar{
     background-color: #ffffff;
-    box-shadow: 0 8px 17px rgba(56, 255, 212, 0.15);
+    box-shadow: 0 7px 16px rgb(207, 249, 231);
     height: auto;
     padding: 0;
-    margin: 0;
+    margin: 40px 0;
     display: flex;
     flex-direction: column;
 }
@@ -93,7 +114,6 @@
 .filterBar .btnFilter .deco {
     width: 25px;
     height: 25px;
-    margin-right: 10px;
     padding: 0;
     background: #04ca88;
 }
@@ -128,6 +148,8 @@
     justify-content: center;
     align-items: center;
 }
+
+
 .filterCat{
     padding: 11px 19px 25px;
     border-top: 1px solid #d6efe4;
@@ -183,8 +205,38 @@
 .filterPageContent{
     display: none;
 }
-
-
+.filterCombine_ctg_Tag{
+    padding: 20px;
+    border-top: 1px solid #d6efe4;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #e7fff7;
+}
+.ctgMobil,.tagMobil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background: #d1ffef;
+    border-radius: 3px;
+   
+}
+.ctgMobil:hover, .tagMobil:hover{
+    cursor: pointer;
+}
+.ctgMobil i, .tagMobil i{
+    font-size: 2.6rem;
+    margin: 0 10px;
+    color: #04ca88;
+}
+.ctgMobil span, .tagMobil span{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #00734d;
+}
+/* product Box */
 .productContainer {
     width: 100vw;}
 .col-9-3 {
