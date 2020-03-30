@@ -161,6 +161,6 @@ $('.closeCatalog').click(function(){
     $('.category').parent().removeClass('slideCtg');
 });
 
-$('.tagMobil').click(function(){
-    $('.filterCat').slideToggle();
-});
+// $('.tagMobil').click(function(){
+//     $('.filterCat').slideToggle();
+// });

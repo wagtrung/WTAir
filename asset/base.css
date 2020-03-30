@@ -548,17 +548,18 @@ section{
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 1110px){
+.order-c0 {
+  order:0;
+}
 
-
+.order-c1 {
+  order:1;
+}
+}
 /* Mobile */
 @media (max-width: 740px){
-  .order-c0 {
-    order:0;
-  }
-  
-  .order-c1 {
-    order:1;
-  }
+ 
 .cen-col{
   text-align: center;
   margin:auto;

@@ -7,6 +7,51 @@
         margin:10px auto;
     }
 
+
+/* Slide category */
+
+.filterCatSlide{
+    background: #ffffff;
+    width: 100%;
+    padding: 25px 19px 25px;
+    border-top: 10px solid #ebfff6;
+}
+.filterCatSlideUl{
+    display:flex;
+    overflow-x: auto;
+}
+.filterCatSlideUl::-webkit-scrollbar{
+    display:none;
+}
+.filterCatSlideA{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.filterCatSlideIcon{
+    width: 111px;
+    height: 60px;
+    border-radius: 3px;
+    background: #04ca88;
+    margin-bottom: 6px;
+}
+.filterCatSlideA span{
+    --line:1.6rem;
+    line-height:var(--line) ;
+    max-height: calc(var(--line)*2);
+    overflow: hidden;
+    display: block;
+    display:-webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 1.3rem;
+    padding: 0 10px;
+    text-align: center;
+    color: #7d7d7d;
+} 
+
+
 .fLi{
     display:block;
 }
@@ -154,7 +199,7 @@
 
 .filterCat{
     padding: 11px 19px 25px;
-    border-top: 1px solid #d6efe4;
+    border-top: 10px solid #ebfff6;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -208,36 +253,58 @@
     display: none;
 }
 .filterCombine_ctg_Tag{
-    padding: 20px;
-    border-top: 1px solid #d6efe4;
+    padding: 0 0 20px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    flex-wrap: wrap;
-    background: #e7fff7;
 }
-.ctgMobil,.tagMobil{
+.filterCombine_ctg_Tag h6{
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    font-family: 'roboto';
+    color: #0b0422;
+}
+.ctgMobil{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 20px;
-    background: #d1ffef;
-    border-radius: 3px;
+    padding: 4px 10px;
+    background: #f7f7f7;
+    border-radius: 4px;
+}
+.tagMobil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+    background: #eafff1;
+    font-weight: 400;
+        
    
 }
-.ctgMobil:hover, .tagMobil:hover{
+
+.ctgMobil span{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #bfbfbf;
+}
+
+.ctgMobil i{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 4px;
+    color: #bfc0c2;
+}
+
+.ctgMobil:hover{
     cursor: pointer;
 }
-.ctgMobil i, .tagMobil i{
-    font-size: 2.6rem;
-    margin: 0 10px;
-    color: #04ca88;
-}
-.ctgMobil span, .tagMobil span{
-    font-size: 1.6rem;
-    font-weight: 600;
-    color: #00734d;
-}
+
+
+
+
 /* product Box */
 .productContainer {
     padding:0 20px;
