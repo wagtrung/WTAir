@@ -670,11 +670,8 @@ margin-bottom:10px;
     background:rgb(107, 107, 107);
 }
 
-
-/* container */
-.container1{
-    padding:30px 0px;
-    width:100%;
+#secB{
+    
 }
 /* ctg=============== */
 .filterCombine_ctg_Tag{
@@ -694,6 +691,7 @@ margin-bottom:10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 }
 .ctghead h3{
+    margin:0;
     color:var(--dblue);
     display: inline-flex;
     align-items: center;
@@ -1101,6 +1099,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
 }
 
 .fTile{
+    display: inline-block;
     border-left:3px solid var(--hove);
     padding: 0 18px;
     margin-bottom:20px;
@@ -1112,7 +1111,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     list-style: none;
 }
 .fLi{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     padding: 10px 0;
     font-size:1.3rem;
@@ -1492,11 +1491,12 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     bottom: 0;
 }
 .serviceBox{
-    display:block;
+    display:flex;
+    align-items: center;
     background: #ffffff;
     width:100%;
-    padding:40px;
-  min-height:250px;
+    padding:40px 20px;
+  min-height:300px;
   border-radius: 5px;
   text-align: center;
   box-shadow: 0 8px 17px rgba(56, 255, 212, 0.15);

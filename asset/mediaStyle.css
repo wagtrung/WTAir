@@ -2,6 +2,15 @@
 /* phone+tablet < 1024px */
 @media only screen and (max-width:64em){
 
+    .serviceBox{
+        width:80%;
+        margin:10px auto;
+    }
+
+.fLi{
+    display:block;
+}
+
 .burgernav{
     display:block;
 }
@@ -58,14 +67,7 @@
     font-size: 2.4rem;
     line-height: 1rem;
 }
-.col-4{
-    max-width: 100%;
-}
-.col-9 {
-    max-width: 100%;
-    width:100%;
-    margin: auto;
-}
+
 .sortBy{
     position: absolute;
     top: -47px;
@@ -238,24 +240,19 @@
 }
 /* product Box */
 .productContainer {
-    width: 100vw;}
-.col-9-3 {
-    margin: 10px 20px;
-    width: 100%;
+    padding:0 20px;
 }
+
 .paginli{
     margin:0;
 }
-.col-12-2_4 {
-    text-align: center;
-    margin: 20px;
-    width: 100%;
-}
+
 .fTile {
     display: inline-block;
 }
 .fUl {
     margin-bottom:10px;
+    padding: 0 20px;
 }
 .fApp img {
     width: auto;
@@ -274,6 +271,8 @@
 .productBox {
     display: flex;
     height: 148px;
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 .productImg {
     padding-top:0;
