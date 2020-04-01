@@ -1542,3 +1542,6 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
 .purplegra{
     background: linear-gradient(0deg, rgba(84,50,205,1) 0%, rgba(136,89,237,1) 100%);
 }
+.filterCatSlide{
+    display:none;
+}

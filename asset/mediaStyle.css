@@ -11,16 +11,22 @@
 /* Slide category */
 
 .filterCatSlide{
+    display:block;
     background: #ffffff;
     width: 100%;
-    padding: 25px 19px 25px;
-    border-top: 10px solid #ebfff6;
+    padding: 10px 19px 25px;
+    border-top: 10px solid #f9f9f9;
 }
 .filterCatSlideUl{
     display:flex;
     overflow-x: auto;
 }
-.filterCatSlideUl::-webkit-scrollbar{
+.filterCatSlideUl-y{
+    display: flex;
+    height: 10vh;
+    overflow-x: auto;
+}
+.filterCatSlideUl::-webkit-scrollbar, .filterCatSlideUl-y::-webkit-scrollbar{
     display:none;
 }
 .filterCatSlideA{
@@ -29,13 +35,77 @@
     align-items: center;
     margin-right: 20px;
 }
-.filterCatSlideIcon{
-    width: 111px;
-    height: 60px;
+.filterCatSlideIcon, .lastSlideCat{
+    width: 121px;
+    height: 80px;
     border-radius: 3px;
-    background: #04ca88;
     margin-bottom: 6px;
 }
+.lastSlideCat{
+    display: flex;
+    border: 1px solid #333;
+}
+.filterCatSlideA:nth-child(1) .filterCatSlideIcon{
+    background: 
+    /* linear-gradient(
+      rgba(0, 0, 0, 0), 
+      rgba(0, 0, 0, 0.45)
+    ), */
+    url(/img/slidea.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.filterCatSlideA:nth-child(2) .filterCatSlideIcon{
+    background: 
+    url(/img/slideb.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.filterCatSlideA:nth-child(3) .filterCatSlideIcon{
+    background: 
+    url(/img/slidec.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.filterCatSlideA:nth-child(4) .filterCatSlideIcon{
+    background: 
+    url(/img/slided.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.filterCatSlideA:nth-child(5) .filterCatSlideIcon{
+    background: 
+    url(/img/slidee.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.filterCatSlideA:nth-child(6) .filterCatSlideIcon{
+    background: 
+    url(/img/slidef.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.filterCatSlideA:nth-child(7) .filterCatSlideIcon{
+    background: 
+    url(/img/slideg.jpg);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+.filterCatSlideA:nth-child(8) .filterCatSlideIcon{
+    background: 
+    url(/img/slideh.png);
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+}
+
 .filterCatSlideA span{
     --line:1.6rem;
     line-height:var(--line) ;
@@ -79,6 +149,7 @@
 }
 
 #Layer_1 {
+    position:absolute;
     width: 150px;
     top: -67px;
     left: -66px;
@@ -114,12 +185,15 @@
 }
 
 .sortBy{
-    position: absolute;
+    display:none;
+    /* position: absolute;
+    font-family: roboto;
     top: -47px;
-    left: 10px;
-    color: #00714c;
-    margin: 10px;
-    font-size: 20px;
+    left: 16px;
+     font-size: 2.2rem;
+    font-weight: 600;
+    font-family: 'roboto';
+    color: #0b0422; */
 
 }
 .filterTag {
@@ -129,6 +203,7 @@
     flex-wrap: wrap;
     order: 0;
     min-width: 100%;
+
 }
 .filterBar{
     background-color: #ffffff;
@@ -140,20 +215,29 @@
     flex-direction: column;
 }
 .filterBar .btnFilter{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 18px 0px;
     flex: 1;
-    color: #04ca88;
+    background: #ffffff;
+    color: #cccccc;
     font-size: 1.4rem;
     margin-right: 0;
 }
-.btnFilter:last-child{
-    margin-right: 0;
+
+.btnFilter::after{
+    position: absolute;
+    content: '';
+    right: 0;
+    width: 1px;
+    height: 26px;
+    background: #efefef;
 }
-
-
+.btnFilter:last-child::after{
+display:none;
+}
 .btnlightHove{
     background:transparent;
 }
@@ -162,7 +246,7 @@
     width: 25px;
     height: 25px;
     padding: 0;
-    background: #04ca88;
+    background: #dbdbdb;
 }
 .filterBar .btnFilter .deco i {
     font-size: 1rem;
@@ -173,7 +257,7 @@
     background: #e8fff5;
 }
 .filterBar .btnFilter:hover .deco {
-    background: #04ca88;
+    background: #00d192;
   }
   .filterBar .filterBtnActive:hover {
     color: #fff;
@@ -185,7 +269,8 @@
   }
 
   .filterBar .filterBtnActive {
-    color: #ffffff;
+    color: #00d192;
+    border-top: 2px solid #00d192;
 }
 .filterBar .filterBtnActive .deco{
     background:#03e5a4;
@@ -199,18 +284,18 @@
 
 .filterCat{
     padding: 11px 19px 25px;
-    border-top: 10px solid #ebfff6;
+    border-top: 10px solid #f9f9f9;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 }
 .filterCatLi{
     list-style: none;
-    /* border: 1px solid #9fdcc8; */
     border-radius: 50px;
     padding: 0px 12px;
-    margin: 20px 10px 0 0;
-    display: flex;
+    height: 40px;
+    margin: 10px 10px 0 0;
+    display: inline-flex;
     align-items: center;
     transition: .3s;
     background: #EDFAF3;
@@ -225,7 +310,9 @@
     background:#36e7b2;
 }
 .filterCatA{
+    white-space: nowrap;
     font-size: 1.3rem;
+    line-height: 2rem;
     padding: 4px 10px 4px 6px;
 }
 .filterCount{
@@ -260,7 +347,7 @@
     width: 100%;
 }
 .filterCombine_ctg_Tag h6{
-    margin: 0;
+    margin: 0 0 10px;
     font-size: 2.2rem;
     font-weight: 600;
     font-family: 'roboto';
@@ -270,8 +357,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 4px 10px;
-    background: #f7f7f7;
+    /* padding: 4px 10px; */
+    /* background: #f7f7f7; */
     border-radius: 4px;
 }
 .tagMobil{
@@ -288,14 +375,14 @@
 .ctgMobil span{
     font-size: 1.4rem;
     font-weight: 600;
-    color: #bfbfbf;
+    color: #04ca88;
 }
 
 .ctgMobil i{
     font-weight: bold;
     font-size: 1rem;
     margin-left: 4px;
-    color: #bfc0c2;
+    color: #04ca88;
 }
 
 .ctgMobil:hover{
