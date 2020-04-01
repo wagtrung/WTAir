@@ -11,11 +11,11 @@
 /* Slide category */
 
 .filterCatSlide{
-    display:block;
+    order: 0;
+    display: block;
     background: #ffffff;
     width: 100%;
-    padding: 10px 19px 25px;
-    border-top: 10px solid #f9f9f9;
+    padding: 20px 19px 25px;
 }
 .filterCatSlideUl{
     display:flex;
@@ -23,7 +23,6 @@
 }
 .filterCatSlideUl-y{
     display: flex;
-    height: 10vh;
     overflow-x: auto;
 }
 .filterCatSlideUl::-webkit-scrollbar, .filterCatSlideUl-y::-webkit-scrollbar{
@@ -201,8 +200,9 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    order: 0;
+    order: 2;
     min-width: 100%;
+    border-top: 1px solid #f7f7f7;
 
 }
 .filterBar{
@@ -210,7 +210,7 @@
     box-shadow: 0 7px 16px rgb(207, 249, 231);
     height: auto;
     padding: 0;
-    margin: 40px 0;
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column;
 }
@@ -219,7 +219,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 18px 0px;
+    padding: 22px 0px;
     flex: 1;
     background: #ffffff;
     color: #cccccc;
@@ -270,7 +270,7 @@ display:none;
 
   .filterBar .filterBtnActive {
     color: #00d192;
-    border-top: 2px solid #00d192;
+    border-bottom: 2px solid #00d192;
 }
 .filterBar .filterBtnActive .deco{
     background:#03e5a4;
@@ -283,8 +283,9 @@ display:none;
 
 
 .filterCat{
-    padding: 11px 19px 25px;
-    border-top: 10px solid #f9f9f9;
+    order: 1;
+    padding: 20px 19px 25px;
+    border-top: 10px solid #ecfff7;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
