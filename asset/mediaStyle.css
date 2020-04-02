@@ -285,7 +285,7 @@ display:none;
 .filterCat{
     order: 1;
     padding: 20px 19px 25px;
-    border-top: 10px solid #ecfff7;
+    border-top: 6px solid #ecfff7;
     display: flex;
     width: 100%;
     flex-wrap: wrap;
@@ -520,7 +520,9 @@ display:none;
     #ServiceFoot {
         bottom: -4%;}
 
-        
+        .category{
+            box-shadow: none;
+        }
 }
 /* Tablet >= 740 and <1024*/
 @media only screen and (min-width:46.25em) and (max-width:64em){
