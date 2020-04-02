@@ -305,6 +305,7 @@
 }
 
 .filterBar {
+  box-shadow: rgba(56, 255, 212, 0.15) 0px 8px 17px;
   position: relative;
   z-index: 899;
   display: -webkit-box;
@@ -542,6 +543,7 @@
 .pop #logo {
   -webkit-animation: jello 1.3s  ease;
           animation: jello 1.3s  ease;
+         
 }
 
 .pop #btnModal {

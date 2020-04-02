@@ -678,6 +678,7 @@ margin-bottom:10px;
     display:none;
 }
 .category{
+    box-shadow: rgba(56, 255, 212, 0.15) 0px 8px 17px;
     background:#fff;
     font-size: 1.6rem;
     border-radius:3px;
@@ -1092,13 +1093,15 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
 }
 /* footer------------------------ */
 .footer{
+    font-size: 1.3rem;
     color:#fff;
-    border-top:4px solid var(--hove);
+    /* border-top:4px solid var(--hove); */
     background:#050413;
     padding: 60px 0;
 }
 
 .fTile{
+    font-family: 'roboto';
     display: inline-block;
     border-left:3px solid var(--hove);
     padding: 0 18px;
@@ -1475,13 +1478,16 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     display: flex;
     justify-content: center;
 }
-.serviceTile{
+.serviceTile, .serviceTile1{
     position: relative;
     font-weight: bold;
     color: var(--dblue);
     padding: 0 20px;
     font-size: 60px;
     line-height: 90px;
+}
+.serviceTile1{
+    
 }
 .belowTile{
     position: absolute;
@@ -1490,13 +1496,21 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     background: var(--hove);
     bottom: 0;
 }
+.belowTile1{
+    left: 0;
+    position: absolute;
+    width: 80px;
+    height: 6px;
+    background: var(--hove);
+    bottom: -21px;
+}
 .serviceBox{
     display:flex;
     align-items: center;
     background: #ffffff;
     width:100%;
     padding:40px 20px;
-  min-height:300px;
+  min-height:400px;
   border-radius: 5px;
   text-align: center;
   box-shadow: 0 8px 17px rgba(56, 255, 212, 0.15);
@@ -1510,6 +1524,9 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
 }
 .serviceDetail{
    
+}
+.serviceDetailSub{
+    padding:0 20px;
 }
 .serviceInfor{
     padding: 0 20px;
@@ -1548,9 +1565,23 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
 /*************************
  * Contact section
  */
- .contact .contact-info span, .contact .contact-info a {
-    color: #888888;
-    display: block;
+
+ .contact{
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 3%);
+    background-image: linear-gradient(to bottom,#e7fff7,#e7fff7);
+    padding: 100px 0 80px;
+ }
+ .contact .contact-info span {
+    color: #ffffff;
+    display: flex;
+    margin-right: 10px;
+  }
+  .contact-info{
+      margin-bottom: 40px;
+  }
+  .contact .contact-info a{
+      color:#333;
+      display: flex;
   }
   
   .contact .contact-info span img, .contact .contact-info a img {
@@ -1592,22 +1623,26 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
   }
   
   .sec-heading .sec-title {
+      position: relative;
     color: #0b0422;
-    font-size: 42px;
+    font-size: 50px;
     margin-bottom: 0;
     font-family: roboto;
   }
   
   @media screen and (max-width: 767px) {
     .sec-heading .sec-title {
-      font-size: 30px;
+      font-size: 43px;
+      padding: 0 20px;
+      text-align: center;
     }
   }
   
   @media screen and (max-width: 479px) {
     .sec-heading .sec-title {
-      font-size: 26px;
+      font-size: 43px;
     }
+
   }
 
   
@@ -1625,8 +1660,18 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
   
   @media screen and (max-width: 991px) {
     .tagline {
-      font-size: 12px;
+        text-align: center;
+        font-size:32px;
     }
+    .contact .contact-info a{
+        margin-top: 30px;
+    padding: 0 40px;
+    font-size: 20px;
+    }
+    .belowTile1 {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -29px;}
   }
   
   .tagline.bar {
@@ -1646,20 +1691,7 @@ border-color: #ff7b00 #ff7b00 transparent #ff7b00;
     height: 2px;
     width: 50px;
   }
-
-  .sec-heading .sec-title {
-    font-size: 42px;
-    margin-bottom: 0;
-  }
-  
-  @media screen and (max-width: 767px) {
-    .sec-heading .sec-title {
-      font-size: 30px;
-    }
-  }
-  
-  @media screen and (max-width: 479px) {
-    .sec-heading .sec-title {
-      font-size: 26px;
-    }
-  }
+.fLogo{
+    width: 230px;
+    padding: 20px 0 20px;
+}

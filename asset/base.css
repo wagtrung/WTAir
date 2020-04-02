@@ -299,6 +299,7 @@ figure {
     }
   }
   
+
   .btn{
     
     position: relative;
@@ -443,7 +444,7 @@ figure {
   
   @media screen and (max-width: 991px) {
     .tagline {
-      font-size: 12px;
+      font-size: 20px;
     }
   }
   
@@ -514,6 +515,9 @@ section{
 /* ==================================== Flex System ================================== */
 .cen-vertical{
   align-items:center;
+}
+.cen-horizontal{
+  justify-content: center;
 }
 
 .cen-cen{

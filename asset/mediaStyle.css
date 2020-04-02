@@ -502,15 +502,25 @@ display:none;
 .searchMobile{
     display:block;
 }
-}
 .pdPriceOld{
     display: none;
 }
 
+.fLogo{
+    width: 200px;
+    margin:auto
+
+}
+
+}
+
+
 /* phone < 740px */
 @media only screen and (max-width:46.1875em){
     #ServiceFoot {
-        bottom: -5%;}
+        bottom: -4%;}
+
+        
 }
 /* Tablet >= 740 and <1024*/
 @media only screen and (min-width:46.25em) and (max-width:64em){
