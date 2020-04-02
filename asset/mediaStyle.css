@@ -523,6 +523,9 @@ display:none;
         .category{
             box-shadow: none;
         }
+        .fullOnMobile{
+            width: 100%;
+        }
 }
 /* Tablet >= 740 and <1024*/
 @media only screen and (min-width:46.25em) and (max-width:64em){
